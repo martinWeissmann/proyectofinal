@@ -31,7 +31,7 @@ const App: React.FC = () => {
         </div>
         <div style={styles.icons}>
           {/* Quinta Sección primero */}
-          <img src="/vector.png" style={styles.vector} />
+      
           <Link style={styles.icon} href="/dequetrata">
             <img
               src="/pre.png"

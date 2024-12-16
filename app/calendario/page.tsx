@@ -80,9 +80,7 @@ const Calendario: React.FC = () => {
 
       <div style={elementosDecorativos}>
         <img 
-          src="/vector.png" 
-          alt="Línea Decorativa" 
-          style={lineaIzquierda} 
+         
         />
         <img 
           src="/OS.png" 
@@ -90,9 +88,7 @@ const Calendario: React.FC = () => {
           style={logo} 
         />
         <img 
-          src="/imagen.png" 
-          alt="Curva Decorativa" 
-          style={curvaDerecha} 
+        
         />
       </div>
     </div>
