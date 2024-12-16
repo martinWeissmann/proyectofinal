@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .calendar {
+            display: grid;
+            grid-template-rows: auto repeat(5, 1fr);
+            max-width: 600px;
+            margin: 0 auto;
+            border: 2px solid #e6702e;
+            border-radius: 5px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .header {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            background-color: #f7f7f7;
+            border-bottom: 2px solid #e6702e;
+        }
+
+        .day {
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+            color: #e6702e;
+        }
+
+        .week {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+        }
+
+        .date {
+            border-right: 1px solid #e6702e;
+            border-bottom: 1px solid #e6702e;
+            padding: 20px;
+            text-align: center;
+            color: #e6702e;
+        }
+
+        .date:nth-child(7) {
+            border-right: none;
+        }
+
+        .week:last-child .date {
+            border-bottom: none;
+        }
+
+        .calendar::before {
+            width: 2px;
+            height: 100px;
+            top: -50px;
+            left: 50px;
+        }
+
+        .calendar::after {
+            width: 100px;
+            height: 2px;
+            bottom: 10px;
+            right: 50px;
+        }
+
+        /* Logo de ejemplo */
+        .logo {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            font-size: 20px;
+            color: #e6702e;
+        }
+    </style>
+</head>
+<body>
+    <div class="calendar">
+        <div class="header">
+            <div class="day">Lunes</div>
+            <div class="day">Martes</div>
+            <div class="day">Miércoles</div>
+            <div class="day">Jueves</div>
+            <div class="day">Viernes</div>
+            <div class="day">Sábado</div>
+            <div class="day">Domingo</div>
+        </div>
+        <div class="week">
+            <div class="date"></div>
+            <div class="date"></div>
+            <div class="date"></div>
+            <div class="date"></div>
+            <div class="date"></div>
+            <div class="date">1</div>
+            <div class="date">2</div>
+        </div>
+        <div class="week">
+            <div class="date">3</div>
+            <div class="date">4</div>
+            <div class="date">5</div>
+            <div class="date">6</div>
+            <div class="date">7</div>
+            <div class="date">8</div>
+            <div class="date">9</div>
+        </div>
+        <div class="week">
+            <div class="date">10</div>
+            <div class="date">11</div>
+            <div class="date">12</div>
+            <div class="date">13</div>
+            <div class="date">14</div>
+            <div class="date">15</div>
+            <div class="date">16</div>
+        </div>
+        <div class="week">
+            <div class="date">17</div>
+            <div class="date">18</div>
+            <div class="date">19</div>
+            <div class="date">20</div>
+            <div class="date">21</div>
+            <div class="date">22</div>
+            <div class="date">23</div>
+        </div>
+        <div class="week">
+            <div class="date">24</div>
+            <div class="date">25</div>
+            <div class="date">26</div>
+            <div class="date">27</div>
+            <div class="date">28</div>
+            <div class="date">29</div>
+            <div class="date">30</div>
+        </div>
+        <div class="logo"></div>
+    </div>
+</body>
+</html>
